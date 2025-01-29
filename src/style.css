@@ -1,0 +1,55 @@
+#Carousel {
+  height: 100%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Ensure the slide is responsive */
+  height: auto;
+  width: 100%;
+}
+
+.SwiperSlide img {
+  display: block;
+  width: 200%;
+  height: auto;  /* Make the image height auto to avoid it being too large */
+  object-fit: contain;  /* This ensures images aren't cropped */
+}
+
+/* Adjust Swiper on mobile */
+@media screen and (max-width: 768px) {
+  .swiperslide img {
+    object-fit: contain;  /* Prevent image cropping */
+    
+  }
+}
+
+
